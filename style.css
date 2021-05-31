@@ -9,6 +9,8 @@ body{
 	background: hsl(0, 0%, 85%);
 	min-width: 100vw;
 	min-height: 100vh;
+	overflow-x: hidden;
+
 }
 
 .container{
