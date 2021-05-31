@@ -4,34 +4,27 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Loan Calculator</title>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-		<style>
-			label{
-				font-weight: bolder;
-				color: rgba(0, 0, 0, .7);
-			}
-		</style>
+		<link rel="stylesheet" href="style.css">
+		
 	</head>
 	<body>
-		<h1 class="text-center my-4">Loan Calculator</h1>
-		<div class="container mt-4">
+		<div class="container">
+			<h1 class="title">Loan Calculator</h1>
 			<form>
-				<div class="form-group my-4">
+				<div class="form-group">
 					<label for="total-loan">Total Loans</label>
-					<input type="number" class="form-control" id="total-loan" placeholder="Enter total loans you have">
+					<input type="number" class="form-input w-100"  id="total-loan" placeholder="Enter total loans you have" min="0">
 				</div>
-				<div class="d-flex justify-content-between w-100 ">
-					<div class="form-group w-25 mr-4 my-4">
-						<label for="interest-rate">Interest Rate (%)</label>
-						<input  type="number" class="form-control" id="interest-rate" placeholder="Enter the interest rate of your loan" min="1" max="100">
-					</div>
-					<div class="form-group w-75 my-4">
-						<label for="paying-amount">Paying Amount</label>
-						<input type="number" class="form-control" id="paying-amount" placeholder="Enter the amount you want to pay monthly as debt">
-					</div>
+				<div class="form-group">
+					<label for="interest-rate">Interest Rate(%)</label>
+					<input  type="number" class="form-input w-100"  id="interest-rate" placeholder="Enter the interest rate of your loan" min="1" max="100">
+				</div>
+				<div class="form-group">
+					<label for="paying-amount">Paying Amount</label>
+					<input type="number" class="form-input w-100"  id="paying-amount" placeholder="Enter the amount you want to pay monthly as debt">
 				</div>
 			</form>
-			<button class="btn btn-primary calculate">Calculate</button>
+			<button class="calculate">Calculate</button>
 			<div class="results" style="margin:50px 0;">
 				<ul>
 					
@@ -39,7 +32,7 @@
 				
 			</div>
 		</div>
-		<h6 class="bg-dark text-white p-1 w-100 m-0 text-center" style="position:fixed; left:0; bottom:0">Developed by: &nbsp;Sebak Thapa</h6>
+		<h6 class="footer" style="position:fixed; left:0; bottom:0">Developed by: &nbsp;Sebak Thapa</h6>
 		<script src="script.js"></script>
 	</body>
 </html>
